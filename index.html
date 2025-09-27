@@ -64,7 +64,11 @@
     <main class="grid">
       <section class="card">
         <div class="video-wrap" id="videoContainer">
-          <iframe id="ytPlayer" src="https://www.youtube.com/xEgRTpM6Q4k?feature=shared" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Unicorner Live"></iframe>
+          <iframe id="ytPlayer" 
+  src="https://www.youtube.com/embed/xEgRTpM6Q4k?autoplay=0&modestbranding=1&rel=0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen 
+  title="Unicorner Live"></iframe>
         </div>
 
         <div class="meta">
@@ -115,7 +119,7 @@
   </div>
 
   <script>
-    const VIDEO_ID = 'https://youtu.be/xEgRTpM6Q4k?feature=shared';
+    const VIDEO_ID = 'xEgRTpM6Q4k';
     document.getElementById('openYt').addEventListener('click', ()=>{
       window.open('https://youtu.be/xEgRTpM6Q4k?feature=shared' + VIDEO_ID, '_blank');
     });
